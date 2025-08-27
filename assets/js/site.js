@@ -39,3 +39,9 @@
     // Vis data for første bruger ved load
     window.onload = userSelectChange;
     userSelect.addEventListener("change", userSelectChange);
+    
+    
+    // --- change background color on save -----
+    saveButton.addEventListener("click", () => {
+        document.body.style.backgroundColor = colorInput.value;
+    });
