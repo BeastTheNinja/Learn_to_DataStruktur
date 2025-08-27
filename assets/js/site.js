@@ -38,3 +38,4 @@
 
     // Vis data for første bruger ved load
     window.onload = userSelectChange;
+    userSelect.addEventListener("change", userSelectChange);
