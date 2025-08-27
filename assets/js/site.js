@@ -1,10 +1,10 @@
 // write cool JS hwere!!
- const userSelect = document.getElementById("userSelect");
+    const userSelect = document.getElementById("userSelect");
     const nameInput = document.getElementById("nameInput");
     const ageInput = document.getElementById("ageInput");
     const colorInput = document.getElementById("colorInput");
     const saveButton = document.getElementById("saveButton");
-
+    
     // Event listener: vis data for valgt bruger
   function userSelectChange() {
       const selectedUser = userSelect.value;
