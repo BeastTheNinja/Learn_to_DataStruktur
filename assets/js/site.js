@@ -42,6 +42,6 @@
     
     
     // --- change background color on save -----
-    saveButton.addEventListener("click", () => {
-        document.body.style.backgroundColor = colorInput.value;
-    });
+    // saveButton.addEventListener("click", () => {
+    //     document.body.style.backgroundColor = colorInput.value;
+    // });
