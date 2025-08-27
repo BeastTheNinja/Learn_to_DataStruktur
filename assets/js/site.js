@@ -10,7 +10,12 @@
       const selectedUser = userSelect.value;
        console.log('change user to: '+selectedUser);
       // TODO: Hent data fra localStorage og vis i formularen
-      
+      const userData = JSON.parse(localStorage.getItem(selectedUser));
+      if (userData) {
+          nameInput.value = userData.name || "";
+          ageInput.value = userData.age || "";
+          colorInput.value = userData.color || "";
+      }
     };
 
     // Event listener: gem data fra formularen
@@ -23,9 +28,12 @@
       const color = colorInput.value;
 
       // TODO: Gem data i localStorage for den valgte bruger
-
-
-
+      const userData = {
+          name: name,
+          age: age,
+          color: color
+      };
+      localStorage.setItem(selectedUser, JSON.stringify(userData));
     });
 
     // Vis data for første bruger ved load
